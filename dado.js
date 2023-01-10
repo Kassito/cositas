@@ -45,7 +45,8 @@ function cookilandRet() {
 }
 
 function cookilandDel() {
-    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    let cok = document.cookie;
+    document.cookie = cok + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 
 
